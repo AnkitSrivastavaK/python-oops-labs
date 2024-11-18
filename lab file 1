@@ -173,6 +173,22 @@ if is_prime(num):
 else:
     print(f"{num} is not a prime number.")
 
+#Q10] write a program to generate fibonacci series 
+def fibonacci(n):
+    fib_series = []
+    
+    # First two terms are always 0 and 1
+    a, b = 0, 1
+    
+    for _ in range(n):
+        fib_series.append(a)
+        a, b = b, a + b  # Update values for the next term
+    
+    return fib_series
+
+
+
+
 
 
 
